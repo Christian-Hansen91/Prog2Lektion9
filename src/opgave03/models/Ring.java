@@ -14,13 +14,13 @@ public interface Ring<T> {
      * Make the successor of the current item the new current item,
      * if the ring is not empty.
      */
-    void advance();
+    void advance() throws Exception;
 
     /**
      * Return the current item.
      * Throws EmptyRingException, if the ring is empty.
      */
-    T getCurrentItem();
+    T getCurrentItem() throws Exception;
 
     /**
      * Add the item after the current item,
@@ -41,7 +41,7 @@ public interface Ring<T> {
      * The new current item is the item after the removed item.
      * Throws EmptyRingException, if the ring is empty.
      */
-    T removeCurrentItem();
+    T removeCurrentItem() throws Exception;
 
     /** Return the number of items in the ring. */
     int size();

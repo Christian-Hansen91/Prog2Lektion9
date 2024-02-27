@@ -11,7 +11,7 @@ public class IntegerVault {
 
 
     public Integer getSecret(String password) {
-        if (password.equals(password)) {
+        if (password.equals(this.password)) {
             return secret;
         }
         else {
